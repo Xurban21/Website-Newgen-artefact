@@ -1,0 +1,93 @@
+
+<script>
+        var i = 0;
+        var images = [];
+        var time = 3000;
+
+        images = 'img/item.jpg';
+        images = 'img/item1.jpg';
+        images = 'img/item2.jpg';
+        images = 'img/item3.jpg';
+        images = 'img/item4.jpg';
+        images = 'img/item5.jpg';
+        images = 'img/item6.jpg';
+
+        function changeImg() {
+            document.slide.src = images[i];
+            if(i < images.length - 1 ) {
+                i++;
+            } else {
+                i = 0;
+            }
+            setTimeout("changeImg()", time);
+        }
+        window.onload = changeImg;
+</script>
+<html>
+    <script>
+        var i = 0;
+        var images = [];
+        var time = 2000;
+
+        images[0] = 'item.jpg';
+        images[1] = 'item2.jpg';
+        images[2] = 'item3.jpg';
+        images[3] = 'item4.jpg';
+        images[4] = 'item5.jpg';
+        images[5] = 'item6.jpg';
+
+        function changeImg() {
+            document.slide.src = images[i];
+            if(i < images.length - 1) {
+                i++;
+            } else {
+                i = 0;
+            }
+            setTimeout("changeImg()", time);
+        }
+        window.onload = changeImg;
+</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=Archivo+Black&display=swap' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
+    <title>New gen artefact</title>
+    <body>
+
+    <div class="header">
+            <div class="head">
+            <a href="index.html"><div class="logo"><img src="logo.jpg" style="width: 45px"></div>
+            <div class="con_header"><b>New Newgen Artefact</b></div></a>
+            </div>
+    </div>
+
+    <div class="banner"><img src="banner.jpg" width="100%" height="60%" style="background-size: cover;"></div>
+    <div class="menu">เพจเกี่ยวกับสิ่งประดิษฐ์ที่นำมาให้ดูและแลกเปลี่ยนความรู้</div>
+    <div class="list_menu">&ensp;&ensp;&ensp;&ensp;&ensp;รายการสิ่งประดิษฐ์ต่างๆ</div>
+    <div class="work"><center>1. โครงการสร้าง ป้ายแสดงจำนวนที่จอดรถด้วย IP Camera</br>
+            (Electronic Parking Spaces Label with IP Camera) 
+            ทางเพจขอสงวนลิขสิทธิ์ทางปัญญานะครับ  <b>#ยังไม่สมบูรณ์</b></center></div>
+    <div class="work_content">
+            <div class="sidebar"><img name="slide" width="450" height="450"></div>
+            <div class="head_s">หลักการทำงานของป้ายนี้ (อธิบายอย่างง่าย)</br>
+
+                    1. กล้อง IP Camera จะตรวจจับรถและส่งไปยัง Raspberry Pi 3 </br>
+                    
+                    2.Raspberry Pi 3 ที่ใช้หลักการเขียน Image processing  เขียนมาร์ค เพื่อจับช่องของพิ้นที่จอดรถ</br>
+                    
+                    3.เมื่อ Raspberry Pi 3  ประมวลผล จะส่งค่าไปยัง บอร์ด Arduino Wemos D1</br>
+                    
+                    4. บอร์ด Wemos D1 จะส่งค่าไปยัง SEVEN SEGMENT
+            </div>
+                <div class="body_s" ><center>(viedo หลักการตรวจจับรถในโปรแกรม)</br></br><iframe frameborder='0' width="562" height="314" src="https://www.youtube.com/embed/0OlG3IKOomA"></iframe></div>
+            <br style="clear: both;">
+    </div>
+    <div class="footer"><div class="footer_content"><b>ฝากติดตามเพื่อเป็นกำลังใจด้วยนะครับ</br>
+        ติดต่อแอดมินได้ที่ Facebook </br>
+            -Suphakon Taphainthong</br>
+            -Phanuwat Khruthjan</br>
+            Web design</br>
+        -Phanthakarn</div>
+        </div>
+        </b>
+    </body>
+</html>

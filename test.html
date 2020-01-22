@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<script>
+        var i = 0;
+        var images = [];
+        var time = 3000;
+
+        images[0] = 'item.jpg';
+        images[1] = 'item2.jpg';
+        images[2] = 'item3.jpg';
+        images[3] = 'item4.jpg';
+        images[4] = 'item5.jpg';
+        images[5] = 'item6.jpg';
+
+        function changeImg() {
+            document.slide.src = images[i];
+            if(i < images.length - 1) {
+                i++;
+            } else {
+                i = 0;
+            }
+            setTimeout("changeImg()", time);
+        }
+        window.onload = changeImg;
+</script>
+<html>
+  <head>
+    <title>Layout</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      .head_s,.sidebar,.body_s {
+        float: left;
+      }
+      .sidebar {
+        width: 450px;
+        min-height: 853px;
+      }
+      .head_s,.body_s {
+        width: calc(100% - 450px);
+        min-height: calc(853px / 2);
+      }
+      .head_s,.body_s {
+          padding: 0px 55px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar"><img name="slide" width="450" height="450"></div>
+    <div class="head_s">หลักการทำงานของป้ายนี้ (อธิบายอย่างง่าย)
+        </br>
+                1. กล้อง IP Camera จะตรวจจับรถและส่งไปยัง Raspberry Pi 3 
+            </br>   
+                2.Raspberry Pi 3 ที่ใช้หลักการเขียน Image processing  เขียนมาร์ค เพื่อจับช่องของพิ้นที่จอดรถ
+            </br>
+                3.เมื่อ Raspberry Pi 3  ประมวลผล จะส่งค่าไปยัง บอร์ด Arduino Wemos D1
+            </br>
+                4. บอร์ด Wemos D1 จะส่งค่าไปยัง SEVEN SEGMENT
+                </div></div>
+    <div class="body_s" ><iframe frameborder='0' width="562" height="314" src="https://www.youtube.com/embed/0OlG3IKOomA"></iframe>
+    </div>
+  </body>
+</html>
