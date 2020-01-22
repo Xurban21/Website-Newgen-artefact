@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+}
+.head {
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: 0px;
+}
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+}
+.con_header {
+    display: inline-block;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.menu {
+    background-color: black;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Prompt', sans-serif;
+}
+.list_menu {
+    background-color:#B82B0C;
+    width: 100%;
+    font-size: 25px;
+    color: white;
+    font-family: 'Prompt', sans-serif;
+}
+.header {
+    position: fixed;top:0;
+    width: 100%;
+}
+.content {
+    font-family: 'Prompt', sans-serif;
+    font-size: 20px;
+    width: 100%;
+}
+.content_img {
+    display: inline-block;
+    font-family: 'Prompt', sans-serif;
+    padding: 5px;
+    border-style: solid;
+    float: right;    
+}
+.img_slider {
+    display: inline-block;
+    border-style: solid;
+    float: left;  
+}
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  .head_s,.sidebar,.body_s {
+    float: left;
+    font-family: 'Prompt', sans-serif;
+  }
+  .sidebar {
+    width: 450px;
+    min-height: 553px;
+  }
+  .head_s,.body_s {
+    width: calc(100% - 450px);
+    min-height: calc(553px / 2);
+  }
+  .head_s,.body_s {
+      padding: 0px 55px;
+  }
+  .work_content {
+      font-family: 'Prompt', sans-serif;
+      padding: 90px;
+  }
+  .footer {
+      background-color:black;
+      width: 100%;
+      color: white;
+      padding: 10px;
+      float: right;
+      font-family: 'Prompt', sans-serif;
+
+  }
+  .work {
+      padding: 5px;
+      font-family: 'Prompt', sans-serif;
+      font-size: 20px
+  }
+  .footer_content {
+      float: right;
+      font-family: 'Prompt', sans-serif;
+  }
+  .banner {
+      width: 100%;
+  }
+  @media only screen and (max-width: 800px) {
+    .head_s, .body_s {
+      width: 100%;
+    }
+    iframe {
+      width: 100% !important;
+    }
+    .work_content {
+        padding: 3px ;
+    }
+    .sidebar {
+        width: 100%;
+    }
+  }
